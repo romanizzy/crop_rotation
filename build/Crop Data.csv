@@ -1,7 +1,6 @@
-﻿Name,Type,Regions
-Apples,Fruit,"Northern High Plains, Southern High Plains, Trans-Pecos"
+﻿Apples,Fruit,"Northern High Plains, Southern High Plains, Trans-Pecos"
 Beets,Root,"South Central, Coastal Bend, South East Texas"
-Blackberries,Fruit,"Northern High Plains, Southern High Plains, Northern Low Plains, Southern Low Plains, Cross Timbers, Blacklands, North East Texas, South East Texas, South Central, Coastal Bend, Upper Coast, South Texas, Lower Valley"
+Blackberries,Fruit,"Norther High Plains, Southern High Plains, Northern Low Plains, Southern Low Plains, Cross Timbers, Blacklands, North East Texas, South East Texas, South Central, Coastal Bend, Upper Coast, South Texas, Lower Valley"
 Blueberries,Fruit,"North East Texas, South East Texas, South Central, Coastal Bend, Upper Coast, South Texas, Lower Valley"
 Broccoli,Leaf,"Northern Low Plains, Southern Low Plains, Cross Timbers, Blacklands, South East Texas, South Central"
 Cantaloupes,Fruit,"Cross Timbers, Blacklands, Trans-Pecos, Edwards Plateau, South Central, South Texas, Lower Valley"
@@ -20,6 +19,7 @@ Hot Peppers,Fruit,"South Texas, Lower Valley"
 Kale,Leaf,"South Central, South Texas, Lower Valley"
 Kohlrabi,Leaf,"South Central, South Texas, Lower Valley"
 Lettuce,Leaf,"Norther Low Plains, Southern Low Plains, Cross Timbers, Edwards Plateau"
+Name,Fruit,Regions
 Onions,Root,"Northern High Plains, Southern High Plains, Trans-Pecos, South Texas, Lower Valley"
 Oranges,Fruit,Lower Valley
 Peaches,Fruit,"Cross Timbers, Blacklands, North East Texas, South East Texas, Edwards Plateau, South Central"
