@@ -5,6 +5,7 @@ import './App.css';
 
 function App() {
   const [counties, setCounties] = useState([]);  // Store all counties from CSV
+  const [crops, setCrops] = useState([]);
   const [selectedCounty, setSelectedCounty] = useState('');  // Selected county
   const [selectedCrop, setSelectedCrop] = useState('');  // Selected crop type
   const [availableCrops, setAvailableCrops] = useState([]);  // Filtered crops
@@ -14,6 +15,11 @@ function App() {
     console.log('Parsed CSV Data:', csvData);  // Log the parsed CSV data
     setCounties(csvData);  // Store parsed county data
   };
+
+  const handleCropsDataLoaded = (csvData) => {
+    console.log('Parsed Crops CSV Data:', csvData); // Log the parsed crops CSV data
+    setCrops(csvData);  // Store parsed crops data
+  }
 
   const handleCountyChange = (e) => {
     console.log('Selected County:', e.target.value);  // Log selected county
@@ -47,7 +53,14 @@ function App() {
       </header>
 
       {/* Load and parse the CSV data */}
-      <CsvLoader onDataLoaded={handleDataLoaded} />
+      <CsvLoader 
+        filePath='public/Counties for Texas Agricultural Statistical Districts.csv'
+        onDataLoaded={handleDataLoaded} 
+      />
+      <CsvLoader 
+        filePath='public/Crop Data.csv'
+        onDataLoaded={handleDataLoaded} 
+      />
 
       {/* Form for filtering crops */}
       <form onSubmit={handleSubmit} className="form-group">

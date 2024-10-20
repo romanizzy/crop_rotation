@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Papa from 'papaparse';
 
-function CsvLoader({ onDataLoaded }) {
+function CsvLoader({ filePath, onDataLoaded }) {
     const [data, setData] = useState([]);
 
     useEffect(() => {
         // Update the path to your CSV file
-        Papa.parse('/Counties for Texas Agricultural Statistical Districts.csv', {
+        Papa.parse(filePath, {
             download: true,
             header: true,  // Assumes the CSV has headers
             complete: (results) => {
@@ -19,7 +19,7 @@ function CsvLoader({ onDataLoaded }) {
                 console.error('Error parsing CSV:', error);  // Log parsing errors
             },
         });
-    }, []);
+    }, [filePath]);
 
     return null;
 }
